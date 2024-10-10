@@ -1,0 +1,64 @@
+{
+  "name": "storybook-source-view",
+  "version": "1.0.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/storybookjs/storybook-source-view"
+  },
+  "license": "MIT",
+  "author": "epicuristic",
+  "main": "dist/preset.js",
+  "files": [
+    "dist/**/*",
+    "README.md",
+    "*.js",
+    "*.d.ts"
+  ],
+  "scripts": {
+    "build": "babel ./src --out-dir ./dist",
+    "build:watch": "npm run build -- --watch",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "run-p build:watch \"storybook --quiet\"",
+    "prerelease": "zx scripts/prepublish-checks.mjs",
+    "release": "npm run build && auto shipit",
+    "eject-ts": "zx scripts/eject-typescript.mjs",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
+  },
+  "dependencies": {
+    "@babel/preset-react": "^7.25.7",
+    "@storybook/icons": "^1.2.10",
+    "axios": "^1.7.7",
+    "react-syntax-highlighter": "^15.5.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.25.7",
+    "@babel/core": "^7.25.7",
+    "@babel/preset-env": "^7.25.7",
+    "@storybook/components": "^8.3.5",
+    "@storybook/manager-api": "^8.3.5",
+    "@storybook/react": "0.0.0-pr-26654-sha-49d01553",
+    "auto": "^11.1.1",
+    "boxen": "^7.1.1",
+    "dedent": "^1.5.1",
+    "prettier": "^3.3.3",
+    "prompts": "^2.4.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "storybook": "0.0.0-pr-26654-sha-49d01553",
+    "zx": "^7.2.3"
+  },
+  "peerDependencies": {
+    "storybook": "^8.3.0 || 0.0.0-pr-26654-sha-49d01553"
+  },
+  "overrides": {
+    "storybook": "0.0.0-pr-26654-sha-49d01553"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "storybook": {
+    "displayName": "Source view",
+    "icon": "https://user-images.githubusercontent.com/321738/63501763-88dbf600-c4cc-11e9-96cd-94adadc2fd72.png"
+  }
+}
