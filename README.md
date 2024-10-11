@@ -10,12 +10,12 @@ The installation is straightforward:
 
 - First, install the dependency:
 ```sh
-$ npm i -D storybook-source-view
+$ npm i -D @epicuristic/storybook-source-view
 ```
 - Then add it to your `.storybook/main.js`
 ```js
 module.exports = {
-  addons: ['storybook-source-view']
+  addons: ['@epicuristic/storybook-source-view']
 }
 ```
 
