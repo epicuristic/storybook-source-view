@@ -1,9 +1,16 @@
 {
   "name": "@epicuristic/storybook-source-view",
   "version": "1.0.2",
+  "description": "Source code viewer addon for Storybook",
+  "keywords": [
+    "storybook",
+    "source",
+    "view",
+    "storybook-addons"
+  ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/storybookjs/storybook-source-view"
+    "url": "https://github.com/epicuristic/storybook-source-view"
   },
   "license": "MIT",
   "author": "epicuristic",
