@@ -1,6 +1,6 @@
 {
   "name": "@epicuristic/storybook-source-view",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Source code viewer addon for Storybook",
   "keywords": [
     "storybook",
